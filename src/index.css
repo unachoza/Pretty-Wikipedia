@@ -7,6 +7,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(86, 12, 17);
+  align-content: center;
+  height: 100%;
 }
 
 code {
@@ -15,4 +17,10 @@ code {
 }
 h1{
   color: white;
+}
+
+input{
+  padding: 15px;
+  margin: 10px;
+  border-radius: 2px;
 }

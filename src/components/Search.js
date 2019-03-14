@@ -11,12 +11,13 @@ class Search extends Component {
     }
 
     handleSubmit = (e) => {
-        console.log('was submitted')
+        this.setState({"query": e.target.value})
+        console.log(this.state.query)
     }
     render(){
         return(
             <div>
-                <input onClick={this.handleSubmit} autoComplete="off" placeholder='search'/>
+                <input onChange={this.handleSubmit} autoComplete="off" placeholder='search'/>
                 <input type="submit"/>
             </div>
             
