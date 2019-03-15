@@ -7,18 +7,23 @@ class Search extends Component {
             'query': "",
             'fireredirect': false
         } 
-        this.handleSubmit =this.handleSubmit.bind(this)
+        this.handleChange =this.handleChange.bind(this)
+        this.handleClick =this.handleClick.bind(this)
     }
 
-    handleSubmit = (e) => {
-        this.setState({"query": e.target.value})
+    handleChange = async (e) => {
+        await this.setState({"query": e.target.value})
         console.log(this.state.query)
+    }
+    handleClick = async (e) => {
+        await this.setState({'fireredirect': true})
+        console.log(this.state)
     }
     render(){
         return(
             <div>
-                <input onChange={this.handleSubmit} autoComplete="off" placeholder='search'/>
-                <input type="submit"/>
+                <input onChange={this.handleChange} autoComplete="off" placeholder='search'/>
+                <input onClick={this.handleClick} type="submit"/>
             </div>
             
         )

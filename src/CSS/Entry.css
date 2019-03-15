@@ -1,0 +1,15 @@
+.entry-card {
+    background-color: rgb(156, 114, 116);
+    height: 100px;
+    width: 80%;
+    border: solid black 2px;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+h1{
+    color: black;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
