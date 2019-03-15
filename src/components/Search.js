@@ -24,7 +24,7 @@ class Search extends Component {
     render(){
         return(
             <div>
-                <input onChange={this.handleChange} autoComplete="off" placeholder='search'/>
+                <input onChange={this.handleChange} autoComplete="off" placeholder='search here'/>
                 <input onClick={this.handleSearch} type="submit"/>
             </div>
             
