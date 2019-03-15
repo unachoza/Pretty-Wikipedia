@@ -8,3 +8,7 @@ h1{
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+.title {
+  color : white;
+  font-size: 25px;
+}
