@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Search from './components/Search'
-import Entry from './components/Entry'
+import EntriesList from './components/EntriesList';
 
 class App extends Component {
   constructor(props){
@@ -15,7 +15,7 @@ class App extends Component {
       <div className="App">
         <h1>Search</h1> 
         <Search/>
-        <Entry/>
+        <EntriesList/>
       </div>
     );
   }
