@@ -15,6 +15,7 @@ class App extends Component {
 
   searchWikipedia = (query) => {
     wikipedia.searchWikipedia(query).then((entires) => {
+    console.log(entires, "entires")
       this.setState({entires: entires})
     }) 
     console.log(`Searching Wikipedia for ${query}`)
