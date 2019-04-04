@@ -14,9 +14,9 @@ class App extends Component {
   }
 
   searchWikipedia = (query) => {
-    wikipedia.searchWikipedia(query).then((entires) => {
-    console.log(entires, "entires")
-      this.setState({entires: entires})
+    wikipedia.searchWikipedia(query).then((entries) => {
+    console.log(entries, "entries")
+      this.setState({entries: entries})
     }) 
     console.log(`Searching Wikipedia for ${query}`)
   }
@@ -28,7 +28,7 @@ class App extends Component {
       <div className="App">
         <h1 className="title">Search Wikipedia here for a pleaseant UI</h1> 
         <Search searchWikipedia={this.searchWikipedia}/>
-        <EntriesList/>
+        <EntriesList />
       </div>
     );
   }

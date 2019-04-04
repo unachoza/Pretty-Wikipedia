@@ -3,7 +3,12 @@ import Entry from './Entry'
 import '../CSS/EntriesList.css'
 
 class EntriesList extends Component{
-    render(){
+    
+    componentDidMount() {
+        
+    }
+    render() {
+        
         return (
             <div className="entries-container">
                 <Entry/>
