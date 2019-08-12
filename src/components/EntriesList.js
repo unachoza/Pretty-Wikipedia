@@ -11,18 +11,13 @@ const EntriesList = (props) => {
     Object.keys(theseResults).map((title, i) => {
         let theTitle = theseResults[title]
         console.log(theTitle)
-        return <h1>{theTitle.title}</h1>
-    // let thisArray = theseResults.map(result => {
-    //     let i = 0
-    //     
-            
+        return theTitle
     })
         
         return (
             <div className="entries-container">
-                <Entry/>
-                <Entry/>
-                <Entry/>
+                <Entry oneEntry={this.theTitle}/>
+              
             </div>
         )
     
