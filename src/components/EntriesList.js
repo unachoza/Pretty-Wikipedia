@@ -1,26 +1,21 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Entry from './Entry'
 import '../CSS/EntriesList.css'
 
-const EntriesList = (props) => {
-    console.log(props)
-    let theseResults = props.result.entries
+const EntriesList = (entry) => {
+    console.log(entry.result)
+    console.log(typeof entry.result, entry.result)
+    let theseResults = entry.result
     console.log("these results : ", theseResults)
     console.log(typeof (theseResults))
-    console.log(theseResults.length)
-    Object.keys(theseResults).map((title, i) => {
-        let theTitle = theseResults[title]
-        console.log(theTitle)
-        return theTitle
+  
+    const cardComponent = theseResults.query.map((entry, i) => {
+        return <Entry title={entry[i].title}/>
     })
-        
-        return (
-            <div className="entries-container">
-                <Entry oneEntry={this.theTitle}/>
-              
-            </div>
-        )
-    
+  
+    return (
+        {cardComponent}
+    )
 }
 
 export default EntriesList
